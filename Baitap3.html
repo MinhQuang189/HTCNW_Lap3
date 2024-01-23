@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .wrapper {
+        margin: 0px auto;
+        height: 800px;
+        width: 700px;
+        background-color: bisque;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    
+    .menu li {
+        height: 100px;
+        width: 100px;
+        background-color: cadetblue;
+        list-style-type: none;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    .menu li:nth-child(5) {
+        flex-wrap: wrap;
+        transform: rotate(30deg);
+    }
+    
+    .menu li:nth-child(5) a {
+        text-align: center;
+    }
+    
+    .menu li:nth-child(5) input {
+        width: 100%;
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu li:hover {
+        background-color: seashell;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+
+        <ul class="menu">
+            <li><a href="#">ITEM 1</a></li>
+            <li><a href="#">ITEM 2</a></li>
+            <li><a href="#">ITEM 3</a></li>
+            <li><a href="#">ITEM 4</a></li>
+            <li><a href="#">ITEM 5
+                <input type="text">
+            </a>
+
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
